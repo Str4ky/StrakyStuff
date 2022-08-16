@@ -11,6 +11,7 @@ table {
     width: 50%;
     table-layout: center;
     background-color: #ccc;
+    margin-top: -100px;
   }
   
   table caption {
@@ -39,7 +40,6 @@ table {
   }
 
   .button {
-    background-color:rgb(48, 146, 92);
     color: #ccc;
     text-decoration: none;
     border-radius: 8px;
@@ -50,8 +50,20 @@ table {
     transition: 0.2s;
   }
 
-  .button:hover {
+  .green {
+  background-color:rgb(48, 146, 92);
+}
+
+  .green:hover {
     background-color:rgb(71, 158, 110);
+  }
+
+  .blue {
+    background-color:rgb(48, 63, 146);
+  }
+  
+  .blue:hover {
+      background-color:rgb(71, 80, 158);
   }
   
   @media screen and (max-width: 600px) {
@@ -62,6 +74,7 @@ table {
     
     table {
       width: 75%;
+      margin-top: -100px;
     }
   
     table caption {
@@ -108,19 +121,6 @@ table {
     }
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   /* general styling */
   body {
     font-family: "Open Sans", sans-serif;
@@ -152,6 +152,7 @@ table {
     overflow: auto;
     position: relative;
     z-index: 2;
+    width: 20%;
   }
   
   .menu {
