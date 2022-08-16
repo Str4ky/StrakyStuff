@@ -1,0 +1,227 @@
+* {
+    background-color: #121212;
+    color: #ccc;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: auto;
+    padding: auto;
+    width: 50%;
+    table-layout: center;
+    background-color: #ccc;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #121212;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    background-color: #262626;
+    color: #ccc;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .button {
+    background-color:rgb(48, 146, 92);
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: 0.2s;
+  }
+
+  .button:hover {
+    background-color:rgb(71, 158, 110);
+  }
+  
+  @media screen and (max-width: 600px) {
+    * {
+        background-color: #121212;
+        color: #ccc;
+    }
+    
+    table {
+      width: 75%;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* general styling */
+  body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+  }
+
+  * {
+    font-family: "Segoe UI";
+    line-height: 1.68;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+  p,
+  ul,
+  li,
+  div,
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    margin: 20px;
+  }
+  
+  nav {
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu {
+    min-width: 200px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: #121212;
+    transition: 0.2s;
+  }
+  
+  nav ul li a:hover {
+    transition: 0.2s;
+  }
+  
+  nav ul li:hover > ul {
+    left: 200px;
+    -webkit-transition: left 200ms ease-in;
+    -moz-transition: left 300ms ease-in;
+    -ms-transition: left 300ms ease-in;
+    transition: left 300ms ease-in;
+  }
+  
+  nav ul li > ul {
+    position: absolute;
+    background-color: #333;
+    top: 0;
+    left: -200px;
+    min-width: 200px;
+    z-index: -1;
+    height: 100%;
+    -webkit-transition: left 200ms ease-in;
+    -moz-transition: left 300ms ease-in;
+    -ms-transition: left 300ms ease-in;
+    transition: left 300ms ease-in;
+  }
+  
+  nav ul li > ul li a:hover {
+    background-color: #2e2e2e;
+  }
+  
+  .link {
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    color: #ccc;
+  }
+  
+  .link:hover {
+    text-decoration: underline 0.15em #ccc;
+    text-underline-offset: 0.4em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    color: #ccc;
+  }
+
+  .active {
+    text-decoration: underline 0.15em #ccc;
+    text-underline-offset: 0.4em;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms;
+    color: #ccc;
+  }
+
+  a {
+    color: #ccc;
+  }
