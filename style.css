@@ -15,7 +15,6 @@ table {
     width: 60%;
     table-layout: center;
     background-color: #ccc;
-    margin-top: -150px;
   }
   
   table caption {
@@ -55,7 +54,7 @@ table {
   }
 
   .green {
-  background-color:rgb(48, 146, 92);
+    background-color:rgb(48, 146, 92);
 }
 
   .green:hover {
@@ -67,7 +66,7 @@ table {
   }
   
   .blue:hover {
-      background-color:rgb(71, 80, 158);
+    background-color:rgb(71, 80, 158);
   }
 
   .red {
@@ -83,7 +82,15 @@ table {
   }
   
   .orange:hover {
-      background-color:rgb(158, 96, 71);
+    background-color:rgb(158, 96, 71);
+  }
+
+  .black {
+    background-color:rgb(20, 20, 20);
+  }
+  
+  .black:hover {
+    background-color:rgb(28, 28, 28);
   }
 
   body {
