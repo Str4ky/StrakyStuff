@@ -65,6 +65,22 @@ table {
   .blue:hover {
       background-color:rgb(71, 80, 158);
   }
+
+  .red {
+    background-color:rgb(146, 48, 48);
+  }
+  
+  .red:hover {
+      background-color:rgb(158, 71, 71);
+  }
+
+  .orange {
+    background-color:rgb(146, 79, 48);
+  }
+  
+  .orange:hover {
+      background-color:rgb(158, 96, 71);
+  }
   
   @media screen and (max-width: 600px) {
     * {
